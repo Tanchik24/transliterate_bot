@@ -77,8 +77,10 @@ async def transliterate_func(message: types.Message):
     user_id = message.from_user.id
     logging.info(f'{user_name=} {user_id=} received message: {message.text} \nsent message: {text}')
     
+    
 async def main():
     await dp.start_polling(bot)
+    
     
 if __name__ == '__main__':
     asyncio.run(main())
